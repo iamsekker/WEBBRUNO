@@ -1,0 +1,23 @@
+* {margin:0;padding:0}
+.clear {clear:both;}
+#wrap {max-width:960px;min-width:700px;margin:0 auto;}
+#left-sidebar {width:20%;background:aquamarine;float:left;}
+#content {width:50%;margin:0 5%;background:burlywood;float:left;}
+#right-sidebar {width:20%;background:darkseagreen;float:left;}
+
+/* CSS para monitores com menos de 900px de largura */
+@media screen and (max-width: 900px) {
+    #wrap {
+        width:100%;
+    }
+    #left-sidebar,#content,#right-sidebar {
+        width:100%;float:none;margin:0;
+    }
+}
+
+/* CSS para monitores com menos de 900px de largura */
+@media screen and (max-width: 400px) {
+    #left-sidebar {
+        display:none;
+    }
+}
